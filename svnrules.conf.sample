@@ -1,0 +1,18 @@
+#####################################################################################
+# Here comes the svnrules.conf sample
+#####################################################################################
+#
+# usage: just run c:\buildtools\svnSparseCo.Cmd <branch name> standing in my directory
+#
+#
+# [must]
+SVNROOT svn://svn.company.ltd/cewlproj
+#
+# [optional]
+BRANCH_SUBDIR_ROOT /work_version/web_adm
+# <subdirs of the branches>    <sparse rules for --depth>, define them consequently
+#
+path bin         files
+path www         empty
+path www/mailer  files
+path www/img     infinity
